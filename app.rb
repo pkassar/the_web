@@ -1,6 +1,5 @@
 require 'sinatra'
 require 'shotgun'
-href = "file.css"
 
 get '/' do
 "Nothing to see here!!!"
@@ -12,6 +11,7 @@ end
 
 
 get '/cat' do
+  @cat_name = ["Amigo", "Oscar", "Viking"].sample
   erb(:index)
 end
 
